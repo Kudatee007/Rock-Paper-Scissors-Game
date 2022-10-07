@@ -1,0 +1,518 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+.App{
+  text-align: center;
+  /* background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%); */
+  /* background-color: rgb(1, 1, 5); */
+  background-image: url(./images/rock2.jpeg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Container{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  height: 50vh;
+  width: 80%;
+  margin: 0 auto;
+}
+.Btns{
+  text-align: center;
+}
+.scor{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid plum;
+  border-style: dashed;
+  width: 40%;
+  margin: 0px auto;
+  align-items: center;
+}
+.scor img {
+  box-sizing: border-box;
+  padding: 0px 30px;
+}
+.Btn{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 30%;
+}
+.display{
+  border: 1px solid white;
+  background-color: white;
+  width: 40%;
+  
+}
+.user{
+  color: blue;
+}
+.com{
+  color: red;
+}
+.Btn1{
+  width: 150px;
+  height: 40px;
+  color: black;
+  background-color: white;
+  box-shadow: 4px 4px black;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.Btn1:hover{
+  background-color: green;
+  color: white;
+  border: 2px solid white;
+}
+.immg{
+  /* border: 10px solid rgb(60, 194, 247); */
+  border: 10px solid aqua;
+  width: 80%;
+  height: 145px;
+  border-radius: 500px;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #fff;
+}
+.immg1{
+  border: 10px solid red;
+  width: 50%;
+  height: 145px;
+  border-radius: 500px;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.btnStart{
+  width: 15%;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  background-color: rgb(245, 57, 57);
+  box-shadow: 4px 5px black;
+  color: white;
+  border: none;
+}
+.btnStart:hover{
+  color: black;
+  border: 2px solid white;
+}
+.btnSt{
+  width: 30%;
+  height: 30px;
+  border-color: gold;
+  border-style: dashed;
+  
+}
+.btnSt:hover{
+  background-color: green;
+  color: white;
+}
+.rock{
+  font-family: fantasy;
+  font-weight: bolder;
+}
+.picked{
+  color: white;
+}
+.result2{
+  color: white;
+}
+.house{
+  color: white;
+}
+.result1{
+  color: white;
+}
+.start{
+  color: white;
+}
+.kuda{
+  font-family: fantasy;
+  text-align: left;
+  padding: 0px 100px;
+  font-size: 25px;
+}
+.k{
+  color: plum;
+}
+.u{
+  color: aqua;
+}
+.d{
+  color: orange;
+}
+.a{
+  color: red;
+}
+.dash{
+  color: plum;
+}
+.t{
+  color: aqua;
+}
+@media (max-width: 1100px) {
+.scor{
+  width: 55%;
+}
+}
+@media (max-width: 950px) {
+  .scor{
+    width: 55%;
+    height: 160px;
+  }
+  .display{
+    height: 160px;
+  }
+  }
+  @media (max-width: 950px) {
+    .display{
+      font-size: 14px;
+    }
+    .kuda{
+      padding: 0px 70px;
+      font-size: 21.7px;
+    }
+  }
+  @media (max-width: 950px) {
+    .scor{
+      width: 55%;
+      height: 135px;
+    }
+    .display{
+      height: 135px;
+      font-size: 13px;
+    }
+    .btnStart{
+      width: 17%;
+      height: 45px;
+      font-size: 17px;
+    }
+    .btnSt{
+      width: 32%;
+      height: 30px;   
+    }
+    .Btn{
+      width: 40%;
+      gap: 13px;
+    }
+  }
+  @media (max-width: 950px) {
+    .scor{
+      width: 55%;
+      height: 120px;
+    }
+    .display{
+      height: 120px;
+      font-size: 11.5px;
+    }
+    .kuda{
+      padding: 0px 50px;
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 775px) {
+    .immg{
+      width: 70%;
+      height: 125px;
+      border-radius: 500px;
+      padding: 20px;
+    }
+    .immg1{
+      width: 45%;
+      height: 125px;
+      border-radius: 500px;
+      padding: 20px;
+    }
+  }
+  @media (max-width: 775px) {
+    .immg{
+      width: 72%;
+      height: 115px;
+      border-radius: 500px;
+      padding: 20px;
+    }
+    .immg1{
+      width: 47%;
+      height: 115px;
+      border-radius: 500px;
+      padding: 20px;
+    }
+    .kuda{
+      padding: 0px 20px;
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 675px) {
+    .scor{
+      width: 60%;
+      height: 100px;
+    }
+    .display{
+      height: 100px;
+      font-size: 10px;
+    }
+    .scor img {
+      box-sizing: border-box;
+      padding: 0px 40px;
+      height: 80px;
+    }
+    .immg{
+      width: 70%;
+      height: 115px;
+      border-radius: 500px;
+      padding: 23px;
+    }
+    .immg1{
+      width: 45%;
+      height: 115px;
+      border-radius: 500px;
+      padding: 23px;
+    }
+    .immg img {
+      width: 40px;
+    }
+    .immg1 img {
+      width: 40px;
+    }
+    .btnStart{
+      width: 20%;
+      height: 45px;
+      font-size: 17px;
+    }
+    .Btn1{
+      width: 120px;
+      height: 33px;
+      font-size: 17px;
+    }
+    .start{
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 600px) {
+    .immg{
+      width: 75%;
+      height: 100px;
+      border-radius: 500px;
+      padding: 18px;
+    }
+    .immg1{
+      width: 47%;
+      height: 100px;
+      border-radius: 500px;
+      padding: 15px;
+    }
+    .btnSt{
+      width: 42%;
+      height: 30px;
+    }
+    .scor{
+      width: 65%;
+      height: 100px;
+    }
+    .display{
+      font-size: 8.5px;
+    }
+    .btnStart{
+      width: 23%;
+    }
+    .Btn{
+      width: 50%;
+      gap: 13px;
+    }
+    
+  }
+  @media (max-width: 550px) {
+      .immg{
+      width: 80%;
+      height: 100px;
+      padding: 18px;
+    }
+    .immg1{
+      width: 52%;
+      height: 100px;
+      border-radius: 500px;
+      padding: 15px;
+    }
+    .Btn1{
+      width: 110px;
+      height: 33px;
+      font-size: 17px;
+    }
+    .start{
+      font-size: 17px;
+    }
+  }
+  @media (max-width: 500px) {
+    .immg{
+      width: 82%;
+      height: 95px;
+      padding: 18px;
+    }
+    .immg1{
+      width: 54%;
+      height: 95px;
+      border-radius: 500px;
+      padding: 15px;
+    }
+    .immg img {
+      width: 35px;
+    }
+    .immg1 img {
+      width: 35px;
+    }
+    .picked{
+      font-size: 22px;
+    }
+    .house{
+      font-size: 22px;
+    }
+    .btnStart{
+      width: 25%;
+    }
+    .Btn{
+      width: 55%;
+      gap: 13px;
+    } 
+  }
+  @media (max-width: 450px) {
+    .immg{
+      width: 88%;
+      height: 90px;
+      padding: 15px;
+    }
+    .immg1{
+      width: 57%;
+      height: 90px;
+      border-radius: 500px;
+      padding: 15px;
+    }
+    .Btn1{
+      width: 100px;
+      height: 33px;
+      font-size: 17px;
+    }
+    .start{
+      font-size: 17px;
+    }
+    .btnStart{
+      width: 30%;
+    }
+    .Btn{
+      width: 60%;
+      gap: 13px;
+    } 
+    .scor{
+      width: 70%;
+      height: 100px;
+    }
+    .display{
+      height: 100px;
+      font-size: 8px;
+    }
+    .scor img {
+      box-sizing: border-box;
+      padding: 0px 40px;
+      height: 70px;
+    }
+    
+  }
+  @media (max-width: 420px) {
+    .immg{
+      width: 91%;
+      height: 87px;
+      padding: 15px;
+    }
+    .immg1{
+      width: 62%;
+      height: 88px;
+      border-radius: 500px;
+      padding: 15px;
+    }
+    .Btn1{
+      width: 95px;
+      height: 33px;
+      font-size: 17px;
+    }
+  }
+  @media (max-width: 400px) {
+    .immg1{
+      width: 68%;
+      height: 87px;
+    }
+    .picked{
+      font-size: 20px;
+    }
+    .house{
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 385px) {
+    .picked{
+      font-size: 18px;
+    }
+    .house{
+      font-size: 18px;
+    }
+    .immg1{
+      width: 73%;
+      height: 87px;
+    }
+    .btnStart{
+      width: 35%;
+    }
+    .Btn{
+      width: 65%;
+      gap: 13px;
+    } 
+  }
+  @media (max-width: 375px) {
+    .immg1{
+      width: 80%;
+      height: 87px;
+    }
+  }
+
+
+
